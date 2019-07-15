@@ -8,6 +8,10 @@ const app = express();
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.json({ status: "success", message: "Welcome to Node API" });
+});
+
 app.get("/api/users", (req, res) => {
   if (Users.length === 0) {
     return res
