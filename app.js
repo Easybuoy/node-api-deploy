@@ -92,5 +92,5 @@ app.delete("/api/users/:id", (req, res) => {
   return res.json({ status: "success", message: "User deleted successfully" });
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));

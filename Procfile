@@ -1,1 +1,1 @@
-web: npm run build --release
+web: node app
